@@ -1,14 +1,14 @@
-# Diffusion Models for Medical Anomaly Detection
+# Diffusion Model Based Brain Tumor Segmentation Enhanced With Inpainting Method
 
-We provide the Pytorch implementation of our MICCAI 2022 submission "Diffusion Models for Medical Anomaly Detection" (paper 704).
+Pytorch implementation of Final Degree Thesis "Diffusion Model Based Brain Tumor Segmentation Enhanced With Inpainting Method".
 
-
-The implementation of Denoising Diffusion Probabilistic Models presented in the paper is based on [openai/guided-diffusion](https://github.com/openai/guided-diffusion).
+The code of the repository is adapted from the paper [Diffusion Models for Medical Anomaly Detection](https://github.com/JuliaWolleb/diffusion-anomaly)
+The implementation of Denoising Diffusion Probabilistic Models presented in the repository is based on [openai/guided-diffusion](https://github.com/openai/guided-diffusion).
 
 
 ## Data
 
-We evaluated our method on the [BRATS2020 dataset](https://www.med.upenn.edu/cbica/brats2020/data.html), and on the [CheXpert dataset](https://stanfordmlgroup.github.io/competitions/chexpert/).
+The method is evaluate on the [BRATS2019 dataset](https://www.med.upenn.edu/cbica/brats2019/data.html).
 A mini-example how the data needs to be stored can be found in the folder *data*. To train or evaluate on the desired dataset, set `--dataset brats` or `--dataset chexpert` respectively. 
 
 ## Usage
@@ -39,15 +39,6 @@ A visualization of the sampling process is done using [Visdom](https://github.co
 
 
 ## Comparing Methods
-
-### FixedPoint-GAN
-
-We follow the implementation given in this [repo](https://github.com/mahfuzmohammad/Fixed-Point-GAN). We choose λ<sub>cls</sub>=1, λ<sub>gp</sub>=λ<sub>id</sub>=λ<sub>rec</sub>=10,  and train our model for 150 epochs. The batch size is set to 10, and the learning rate to 10<sup>-4</sup>.
-
-### VAE
-
-We follow the implementation given in this [repo](https://github.com/aubreychen9012/cAAE) and train the model for 500 epochs.  The batch size is set to 10, and the learning rate to 10<sup>-4</sup>.
-
 
 ### DDPM
 For sampling using the DDPM approach, run 
