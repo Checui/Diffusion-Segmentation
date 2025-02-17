@@ -1,5 +1,6 @@
 # Diffusion Model Based Brain Tumor Segmentation Enhanced With Inpainting Method
-![Method presented](images/diagrama_paper.png)
+
+![Method presented](image/diagrama_paper.png)
 
 
 Pytorch implementation of Final Degree Thesis "Diffusion Model Based Brain Tumor Segmentation Enhanced With Inpainting Method".
